@@ -23,4 +23,5 @@ public void checkOut(String name) {
     }
 }
 
+```
 This function is interesting to me because it encapsulates the essential feature of the library system while ensuring that the same book cannot be checked out by more than one person at a time. The simplicity and elegance of this logic highlight the power of object-oriented programming in handling real-world scenarios.
