@@ -70,41 +70,6 @@ public class LibraryApplication {
         }
     }
 
-    // This method shows all books that are currently checked out
-//    private static void showCheckedOutBooks(Scanner scanner) {
-//        boolean anyBooksCheckedOut = false;
-//
-//        System.out.println("Checked Out Books:");
-//        for (Book book : inventory) {
-//            if (book.isIsCheckedOut()) {
-//                System.out.println("ID: " + book.getId() + ", Title: " + book.getTitle() +
-//                        ", Checked out to: " + book.getCheckedOutTo());
-//                anyBooksCheckedOut = true;
-//            }
-//        }
-//
-//        System.out.println("Enter 'C' to check in a book or 'X' to return to the home screen:");
-//        String input = scanner.nextLine().trim().toUpperCase(); // Make sure it's uppercase for consistency
-//
-//        if (anyBooksCheckedOut) {
-//            System.out.print("Enter the ID of the book to check in or -1 to return: ");
-//            int bookId = scanner.nextInt();
-//            scanner.nextLine(); // Consume newline
-//
-//            if (bookId >= 0 && bookId < INVENTORY_SIZE) {
-//                if (inventory[bookId].isIsCheckedOut()) {
-//                    inventory[bookId].checkIn();
-//                    System.out.println("Book checked in successfully!");
-//                } else {
-//                    System.out.println("This book is not checked out.");
-//                }
-//            }
-//        } else {
-//            System.out.println("No books are currently checked out.");
-//        }
-//    }
-//}
-
     private static void showCheckedOutBooks(Scanner scanner) {
         System.out.println("Checked Out Books:");
         for (Book book : inventory) {
